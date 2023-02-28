@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Linux的安装和基本配置, Starreeze&#39;s Blog">
-    <meta name="description" content="Linux的安装和基本配置（ 本文同步发布于NJUCS成长手册 https://github.com/NJU-CS/njucs ）
-A computer is like air conditioning – it becomes usele">
+    <meta name="description" content="（ 本文同步发布于NJUCS成长手册 https://github.com/NJU-CS/njucs ）
+A computer is like air conditioning – it becomes useless when you o">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -343,8 +343,8 @@ A computer is like air conditioning – it becomes usele">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/source/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/" class="post-category">
-                                折腾记录
+                            <a href="/source/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="post-category">
+                                技术文章
                             </a>
                         
                     </div>
@@ -385,7 +385,7 @@ A computer is like air conditioning – it becomes usele">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Linux的安装和基本配置"><a href="#Linux的安装和基本配置" class="headerlink" title="Linux的安装和基本配置"></a>Linux的安装和基本配置</h2><p>（ 本文同步发布于NJUCS成长手册 <a target="_blank" rel="noopener" href="https://github.com/NJU-CS/njucs">https://github.com/NJU-CS/njucs</a> ）</p>
+                <p>（ 本文同步发布于NJUCS成长手册 <a target="_blank" rel="noopener" href="https://github.com/NJU-CS/njucs">https://github.com/NJU-CS/njucs</a> ）</p>
 <p><em>A computer is like air conditioning – it becomes useless when you open Windows.</em> - Linus Torvalds</p>
 <p>程序员的开发环境就如战士手中的枪，其重要性再怎么强调也不为过。而OS又是环境的基础，特别推荐每一位CSer从现在开始，抛弃Windows，拥抱Linux。</p>
 <h3 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h3><p>从现在开始使用Linux的优点包括但不限于：</p>
@@ -423,7 +423,7 @@ A computer is like air conditioning – it becomes usele">
 </tr>
 </tbody></table>
 <p>综上，如果对自己解决问题的能力有一定信心，推荐最后一种方式。后面因为高效而节省的时间完全可以弥补前期探索的消耗，关键是用起来还特别舒服。</p>
-<p>至于各大Linux发行版，推荐新手使用kubuntu ( <a target="_blank" rel="noopener" href="https://kubuntu.org/">https://kubuntu.org/</a> )，它是使用kde作为桌面环境的ubuntu，界面美观，用户多文档多，出了问题网上有各种方案可以参考（桌面问题 google [kde&#x2F;kubuntu + 问题描述]，命令行问题 google [ubuntu + 问题描述]）。</p>
+<p>至于各大Linux发行版，推荐新手使用kubuntu ( <a target="_blank" rel="noopener" href="https://kubuntu.org/">https://kubuntu.org/</a> )，它是使用kde作为桌面环境的ubuntu，界面美观，用户多文档多，出了问题网上有各种方案可以参考（桌面问题 google [kde&#x2F;kubuntu + 问题描述]，其他问题 google [ubuntu + 问题描述]）。</p>
 <h3 id="How"><a href="#How" class="headerlink" title="How"></a>How</h3><p>这里描述真机安装kubuntu的方法。</p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>下面的步骤可以配合网上的其他教程一起食用，它们有图片更直观；如有冲突，以下面的为准。</p>
 <ol>
@@ -431,20 +431,20 @@ A computer is like air conditioning – it becomes usele">
 </li>
 <li><p>准备一块空的 4GB+ U盘，使用 UltraISO 将刚刚下载的ISO文件烧录进去，制作成启动U盘（可以自行上网搜索如何使用UltraISO制作启动U盘；UltraISO是付费软件，有开源替代可以尝试）；</p>
 </li>
-<li><p>在Windows系统分区所在硬盘上分出50~100GB空闲空间（Windows操作方式：Win徽标+X打开磁盘管理，找到一个有空闲空间的分区，右击分区-压缩卷），然后放着，无需格式化和建立新分区；</p>
+<li><p>在<strong>Windows系统分区所在硬盘</strong>上分出50~100GB空闲空间（Windows操作方式：Win徽标+X打开磁盘管理，找到一个有空闲空间的分区，右击分区-压缩卷），然后放着，无需格式化和建立新分区；</p>
 </li>
 <li><p>插上U盘重启，进入BIOS，从U盘启动；</p>
 </li>
 <li><p>点击Install，选择 minimal install, custom install，注意语言尽量选English，进入分区界面；</p>
 </li>
-<li><p>这一步比较重要，不要搞错了——对第3步分出来的空闲空间建立新分区，格式选择 ext4，mount point 选择 &#x2F;；找到唯一的EFI分区，将其标号填入最下面的 bootloader 安装位置中；如果其他教程还要你单独分出 &#x2F;home，直接无视；</p>
+<li><p>这一步比较重要，不要搞错了——对第3步分出来的空闲空间建立新分区，格式选择 ext4，mount point 选择 &#x2F;；找到唯一的EFI分区，将其标号填入最下面的 bootloader 安装位置中；<strong>如果其他教程还要你单独分出 &#x2F;home，直接无视</strong>；</p>
 </li>
 <li><p>按照提示一直点下一步就行了，完成后重启，能看到选择OS的界面就算成功。</p>
 </li>
 </ol>
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>安装完成后，推荐进行下面的配置（每一项都可以单独找到一篇网上的教程）：</p>
 <ul>
-<li><p>如果有Nvidia独显，需要安装显卡驱动：打开 additional drivers，选择Nvidia私有驱动；</p>
+<li><p>如果有Nvidia独显，需要安装显卡驱动：打开 settings - hardware - driver manager，选择Nvidia私有驱动；</p>
 </li>
 <li><p>安装中文输入法：推荐搜狗；</p>
 </li>
@@ -633,8 +633,8 @@ A computer is like air conditioning – it becomes usele">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/source/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/" class="post-category">
-                                    折腾记录
+                            <a href="/source/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="post-category">
+                                    技术文章
                                 </a>
                             
                             
@@ -643,6 +643,10 @@ A computer is like air conditioning – it becomes usele">
                 </div>
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/source/tags/tossing/">
+                        <span class="chip bg-color">tossing</span>
+                    </a>
                     
                     <a href="/source/tags/web/">
                         <span class="chip bg-color">web</span>
@@ -855,60 +859,6 @@ A computer is like air conditioning – it becomes usele">
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
     
 
     <div class="container row center-align"
