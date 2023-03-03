@@ -4,8 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="游戏评论：What Remains of Edith Finch, Starreeze">
-    <meta name="description" content="前些时间尝试了 What Remains of Edith Finch，这款“步行模拟器”的交互体验竟然出乎意料地精彩。让我最难忘的莫过于 Lewis 在工厂切鱼头的片段——他身处纷乱芜杂的鱼罐头工厂，取鱼、切鱼头、扔到流水线上，心却在想象">
+    <meta name="keywords" content="Linux使用小技巧, Starreeze">
+    <meta name="description" content="（记录文章，写法简洁，不指望别人能看懂）
+
+使用 Linux File Systems for Windows by Paragon Software，可以在 Windows 上直接访问  ext4 分区
+
+定时执行或登陆自动启动脚本，使用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>游戏评论：What Remains of Edith Finch | Starreeze</title>
+    <title>Linux使用小技巧 | Starreeze</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -297,12 +301,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">游戏评论：What Remains of Edith Finch</h1>
+                    <h1 class="description center-align post-title">Linux使用小技巧</h1>
                 </div>
             </div>
         </div>
@@ -326,12 +330,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/source/tags/game/">
-                                <span class="chip bg-color">game</span>
+                            <a href="/source/tags/tossing/">
+                                <span class="chip bg-color">tossing</span>
                             </a>
                         
-                            <a href="/source/tags/imagination/">
-                                <span class="chip bg-color">imagination</span>
+                            <a href="/source/tags/software/">
+                                <span class="chip bg-color">software</span>
                             </a>
                         
                     </div>
@@ -342,8 +346,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/source/categories/%E6%96%87%E8%89%BA%E8%AF%84%E8%AE%BA/" class="post-category">
-                                文艺评论
+                            <a href="/source/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="post-category">
+                                技术文章
                             </a>
                         
                     </div>
@@ -355,7 +359,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-03-01
+                    2023-03-03
                 </div>
                 
 
@@ -384,17 +388,34 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>前些时间尝试了 <em>What Remains of Edith Finch</em>，这款“步行模拟器”的交互体验竟然出乎意料地精彩。让我最难忘的莫过于 Lewis 在工厂切鱼头的片段——他身处纷乱芜杂的鱼罐头工厂，取鱼、切鱼头、扔到流水线上，心却在想象中的美丽的童话世界，冒险、远航、参加庆典。其设计精妙之处就在于，玩家真的需要一心二用，右手操作鼠标机械地滑动，来完成工厂里的工作；而左手则操作键盘控制方向，来通过想象中的迷宫和城堡。明暗色彩的强烈对比也生出一种令人震撼的反差。</p>
-<img src="/assets/game/what-remains-1.jpg" width="350">
-<img src="/assets/game/what-remains-2.jpg" width="350">
+                <p>（记录文章，写法简洁，不指望别人能看懂）</p>
+<ol>
+<li><p>使用 Linux File Systems for Windows by Paragon Software，可以在 Windows 上直接访问  ext4 分区</p>
+</li>
+<li><p>定时执行或登陆自动启动脚本，使用 crontab</p>
+</li>
+<li><p>一些非常实用的 alias</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># aria2</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">aria2</span><span class="token operator">=</span><span class="token string">'aria2c --enable-rpc --rpc-listen-all'</span>
+<span class="token builtin class-name">alias</span> aria2-down<span class="token operator">=</span><span class="token string">'aria2c -U "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" --file-allocation=none'</span>
 
-<p>渐渐地，想象的画面越来越大，BGM 渐强，直到金色的辉煌占满了整个画面——这个世界中，人们欢呼雀跃，载歌载舞，五彩的礼花洒落满地。Lewis 走上宫殿的红毯，被拥戴为王。面对金灿灿的皇冠，他弯下了腰低下了头，等待加冕——直到现实中切鱼头的刀斩下。</p>
-<img src="/assets/game/what-remains-3.jpg" alt="注意头顶上被华丽的装饰隐藏地很好的刀刃" width="600">
+<span class="token comment"># sysutils</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token string">'sudo -E'</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">sd</span><span class="token operator">=</span><span class="token string">'shutdown 0'</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">rb</span><span class="token operator">=</span><span class="token string">'reboot'</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">disk_down</span><span class="token operator">=</span><span class="token string">'sudo hdparm -S 1 /dev/sda'</span>
 
-<p>玩到这里，我浑身发抖，简直起了一身鸡皮疙瘩。细细想来，这其实是一个巧妙的隐喻——现实的刀，终究会斩断一切幻想。</p>
-<p>或许我们每个人都有一个幻想的童年，在这想象的世界中无往不至，“无所不为”。我刚上小学时，也曾想象自己来自遥远的“奥特曼星球”，因为某些任务而不得不滞留于这里。有趣的是，我的幻想竟然有现实的朋友来一起分享——我们一同在小区的角落里“排兵布阵”，在学校故作深沉地“保持机密”。恍惚间，仿佛自己真的是那个拯救苍生的超级英雄。</p>
-<p>后来，后来啊，随着年龄渐长，我们终于还是像 Lewis 一样，顺从地低下了头——原来自己只是平凡中的一个，不是什么无所不能的超级英雄——任凭现实的刀锋斩断了我们的幻想。然后，回到工厂里，日复一日地做着相同的、枯燥的工作。所谓的保持童心，难免是一句空想。</p>
-<p>也许成长本就如此吧——抛弃一些无谓的幻想，得到一些供自己生存的知识和窍门。要保持初心，是多么难啊！</p>
+<span class="token comment"># make utils</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">remake</span><span class="token operator">=</span><span class="token string">'make clean &amp;&amp; make'</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">bcmake</span><span class="token operator">=</span><span class="token string">'mkdir -p build; cd build &amp;&amp; cmake .. &amp;&amp; cd ..'</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">bmake</span><span class="token operator">=</span><span class="token string">'cd build &amp;&amp; make'</span>
+
+<span class="token comment"># proxy</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">slp</span><span class="token operator">=</span><span class="token string">'export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890'</span> <span class="token comment"># set local proxy</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">usp</span><span class="token operator">=</span><span class="token string">'set -e http_proxy https_proxy all_proxy'</span> <span class="token comment"># unset proxy</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">ssp</span><span class="token operator">=</span><span class="token string">'ssh -f -N -D 0.0.0.0:1080 localhost'</span> <span class="token comment"># set socks proxy (server)</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">pipi</span><span class="token operator">=</span><span class="token string">'python -m pip install -i https://mirrors.nju.edu.cn/pypi/web/simple/ --proxy ""'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
 
                 
             </div>
@@ -421,7 +442,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://starreeze.github.io/posts/you-xi-ping-lun-what-remains-of-edith-finch/">https://starreeze.github.io/posts/you-xi-ping-lun-what-remains-of-edith-finch/</a>
+                    <a href="https://starreeze.github.io/posts/linux-shi-yong-xiao-ji-qiao/">https://starreeze.github.io/posts/linux-shi-yong-xiao-ji-qiao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -459,12 +480,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/source/tags/game/">
-                                    <span class="chip bg-color">game</span>
+                                <a href="/source/tags/tossing/">
+                                    <span class="chip bg-color">tossing</span>
                                 </a>
                             
-                                <a href="/source/tags/imagination/">
-                                    <span class="chip bg-color">imagination</span>
+                                <a href="/source/tags/software/">
+                                    <span class="chip bg-color">software</span>
                                 </a>
                             
                         </div>
@@ -510,9 +531,64 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/linux-shi-yong-xiao-ji-qiao/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Linux使用小技巧">
+                        
+                        <span class="card-title">Linux使用小技巧</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/source/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="post-category">
+                                    技术文章
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/source/tags/tossing/">
+                        <span class="chip bg-color">tossing</span>
+                    </a>
+                    
+                    <a href="/source/tags/software/">
+                        <span class="chip bg-color">software</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/pytorch-ji-ben-xun-lian-kuang-jia/">
                     <div class="card-image">
@@ -530,9 +606,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -554,59 +630,6 @@
                     
                     <a href="/source/tags/AI/">
                         <span class="chip bg-color">AI</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/da-jian-ge-ren-wang-zhan/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="搭建个人网站">
-                        
-                        <span class="card-title">搭建个人网站</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/source/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="post-category">
-                                    技术文章
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/source/tags/tossing/">
-                        <span class="chip bg-color">tossing</span>
-                    </a>
-                    
-                    <a href="/source/tags/web/">
-                        <span class="chip bg-color">web</span>
                     </a>
                     
                 </div>
